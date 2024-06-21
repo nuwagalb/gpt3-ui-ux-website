@@ -5,13 +5,14 @@ const Article = ({ imageUrl, date, text }) => {
   return (
     <div className='gpt3__blog-container_article'>
       <div className='gpt3__blog-container_article-image'>
-        <img src={imageUrl} alt="blog_image" />
+        <img src={imageUrl} alt="blog" />
       </div>
       <div className='gpt3__blog-container_article-content'>
         <p>{date}</p>
         <h3>{text}</h3>
+        <p>Read Full Article</p>
       </div>
-      <p>Read Full Article</p>
+      
     </div>
   )
 }
