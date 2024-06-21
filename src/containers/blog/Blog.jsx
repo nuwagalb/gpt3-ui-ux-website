@@ -1,5 +1,6 @@
 import React from 'react';
 import { Article } from '../../components';
+import { blog01, blog02, blog03, blog04, blog05 } from './import.js';
 import './blog.css';
 
 const Blog = () => {
@@ -10,13 +11,13 @@ const Blog = () => {
       </div>
       <div className='gpt3__blog-container'>
         <div className='gpt3__blog-container__groupA'>
-          <Article />
+          <Article imageUrl={blog01} date="Jun 21, 2024" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
         </div>
         <div className='gpt3__blog-container__groupB'>
-        <Article />
-        <Article />
-        <Article />
-        <Article />
+          <Article imageUrl={blog02} date="Jun 21, 2024" text="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
+          <Article imageUrl={blog03} date="Jun 21, 2024" text="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
+          <Article imageUrl={blog04} date="Jun 21, 2024" text="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
+          <Article imageUrl={blog05} date="Jun 21, 2024" text="GPT-3 and Open  AI is the future. Let us exlore how it is?"/>
         </div>
       </div>
     </div>
