@@ -3,11 +3,11 @@ import './article.css';
 
 const Article = ({ imageUrl, date, text }) => {
   return (
-    <div className='gpt3__blog-container__article'>
-      <div className='gpt3__blog-container__article'>
+    <div className='gpt3__blog-container_article'>
+      <div className='gpt3__blog-container_article-image'>
         <img src={imageUrl} alt="blog_image" />
       </div>
-      <div className='gpt3__blog-container__article-content'>
+      <div className='gpt3__blog-container_article-content'>
         <p>{date}</p>
         <h3>{text}</h3>
       </div>
@@ -16,4 +16,4 @@ const Article = ({ imageUrl, date, text }) => {
   )
 }
 
-export default Article
+export default Article;
